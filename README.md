@@ -9,9 +9,10 @@
 	```
 	> Note: You must have git installed in your machine.
 
-2. Open command prompt and go to the cloned folder and do a `npm init`. Provide all the required project information.
-	> You will see a package.json file created.
+2. Open the `package.json` file and change your project name, author and repository.
 
-3. In the command prompt, run `setup.bat` file, this will install all the required packages to your project.
+3. Open command prompt and go to the cloned folder and run `setup.bat` file, this will install all the required packages to your project.
+
+4. Run `grunt`. This create a new folder called `app` and initialize all project files into this folder.
 
 
