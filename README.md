@@ -10,6 +10,12 @@
 	> Note: You must have git installed in your machine.
 
 2. Open the `package.json` file and change your project name, author and repository.
+	
+	``` bash
+	"name": "Your project name",
+	"version": "0.0.0",
+	"description": "Add your project description here",
+    ```
 
 3. Open command prompt and go to the cloned folder and run `setup.bat` file, this will install all the required packages to your project.
 
