@@ -14,5 +14,8 @@
 3. Open command prompt and go to the cloned folder and run `setup.bat` file, this will install all the required packages to your project.
 
 4. Run `grunt`. This create a new folder called `app` and initialize all project files into this folder.
+	> The folder `app` will contain all the deliverables of your project.
+
+
 
 
