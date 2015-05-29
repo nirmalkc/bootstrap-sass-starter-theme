@@ -1,1 +1,0 @@
-npm install grunt-contrib-watch grunt-contrib-sass grunt-contrib-uglify grunt-contrib-copy bootstrap-sass bourbon --save-dev

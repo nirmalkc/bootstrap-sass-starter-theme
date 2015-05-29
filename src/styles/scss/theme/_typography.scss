@@ -1,6 +1,9 @@
 // --------------------------
 // Typography
 // --------------------------
-.text-white {
-  /*color: $white;*/
-}
+
+// Base font face definition
+@include font-face("Roboto", $base-font-regular-url, $file-formats: ttf eot svg woff);
+@include font-face("Roboto", $base-font-italic-url, normal, italic, $file-formats: ttf eot svg woff);
+@include font-face("Roboto", $base-font-bold-url, bold, $file-formats: ttf eot svg woff); 
+@include font-face("Roboto", $base-font-bold-italic-url, bold, italic, $file-formats: ttf eot svg woff); 

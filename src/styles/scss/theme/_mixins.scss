@@ -16,14 +16,15 @@
 }
 
 // Clearfix
-@mixin clearfix() {
-	&:before, &:after {
-		content: "";
-		display: table;
-	}
-	&:after {
-		clear:both;
-	}
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 // Clear after (not all clearfix need this also)
@@ -110,7 +111,6 @@
 @mixin box-size($w, $h:$w) {
   width: $w;
   height: $h;
-  overflow: auto;
 }
 
 
@@ -154,6 +154,19 @@
     top: 50%;
     transform: translate(0, -50);
   }
+}
+
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 

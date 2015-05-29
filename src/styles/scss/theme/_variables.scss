@@ -1,35 +1,78 @@
-// Generic Variables
+//--------------------------------------------
+// Typography
+//--------------------------------------------
 
+$base-font-regular-url:				'../fonts/roboto/Roboto-Light';
+$base-font-italic-url: 				'../fonts/roboto/Roboto-LightItalic';
+$base-font-bold-url: 				'../fonts/roboto/Roboto-Medium';
+$base-font-bold-italic-url:			'../fonts/roboto/Roboto-MediumItalic';
+
+$base-font-serif-regular-url:		'../fonts/playfairdisplay/PlayfairDisplay-Regular';
+$base-font-serif-italic-url: 		'../fonts/playfairdisplay/PlayfairDisplay-Italic';
+$base-font-serif-bold-url: 			'../fonts/playfairdisplay/PlayfairDisplay-Bold';
+$base-font-serif-bold-italic-url:	'../fonts/playfairdisplay/PlayfairDisplay-BoldItalic';
+
+$icon-font-url:				'../fonts/icons/theme-icons';
+
+$font-family-sans-serif:	'Roboto', Helvetica, Arial, sans-serif;
+$font-family-serif:			'PlayfairDisplay', 'Times New Roman', Georgia, serif;
+$font-family-icon:			'theme-icons' !important;
+
+$font-family-base: 			$font-family-sans-serif;
+$font-family-secondary:		$font-family-serif;
+
+$theme-font-size-base:		14px !default;
+$theme-font-size-medium: 	ceil(($theme-font-size-base * 1.30)) !default; 
+$theme-font-size-large: 	ceil(($theme-font-size-base * 1.60)) !default; 
+$theme-font-size-xlarge: 	ceil(($theme-font-size-base * 2)) !default; 
+$theme-font-size-small: 	ceil(($theme-font-size-base * 0.90)) !default; 
+
+$theme-line-height-base:	1.428571429 !default;
+$theme-line-height-large:   1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$theme-line-height-small:   1.2 !default;
+
+$theme-font-weight-normal: 	300 !default;
+$theme-font-weight-bold: 	700 !default;
+
+//--------------------------------------------
+// Colors
+//--------------------------------------------
 
 // Primary Colors
 
 
 // Secondary Colors
 
-// Navigation Colors
-// 
-// 
-
-
-// Helpers - Spacing
-$pad-vsmall: 6px;
-$pad-small: 12px;
-$pad-medium: 24px;
-$pad-large: 24px;
-
-
 
 // Generic Colors
-$white: rgb(255,255,255);
+$theme-color-black: 		#0e0a09;
+$theme-color-white: 		rgb(255,255,255);
 
 // Notification colors
-$error:#fe3e3b;
-$success:#52d76a;
-$warning:#fecb31;
+$error: 					#f95355;
+$success: 					#66be68;
+$warning: 					orange;
+
+// Body
+$theme-body-bg: 			$theme-color-white;
+$theme-body-fg: 			$theme-color-black;
 
 
-// Icon Characters
+// Helpers
+$spacing-base-vertical:     12px !default;
+$spacing-base-horizontal:   24px !default;
+
+$spacing-large-vertical:    24px !default;
+$spacing-large-horizontal:  32px !default;
+
+$spacing-small-vertical:    6px !default;
+$spacing-small-horizontal:  12px !default;
+
+$spacing-xs-vertical:       3px !default;
+$spacing-xs-horizontal:     6px !default;
 
 
 
-// Media or Images
+// Graphics media
+$theme-image-path:'../img/';
+$theme-main-logo-image: $theme-image-path + 'logo-theme.png';

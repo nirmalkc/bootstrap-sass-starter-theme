@@ -3,6 +3,11 @@
 // --------------------------
 @import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
 @import 'theme/variables';
-@import 'theme/mixins';
-@import 'theme/base';
 @import 'theme/typography';
+@import 'theme/mixins';
+@import 'theme/icons';
+@import 'theme/base';
+@import 'theme/modules';
+@import 'theme/layout';
+@import 'theme/pages';
+

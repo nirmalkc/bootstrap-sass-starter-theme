@@ -1,20 +1,24 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		dirs: {
+	        source: 'src',
+	        staging: 'app'
+	    },
 		sass: {
 			dist: {
 				options: {
 					style: 'compressed'
 				},
 				files: [{
-					'app/css/bootstrap.min.css':'src/styles/scss/bootstrap.scss',
-					'app/css/theme.min.css':'src/styles/scss/theme.scss'
+					'<%= dirs.staging %>/css/bootstrap.min.css':'<%= dirs.source %>/styles/scss/bootstrap.scss',
+					'<%= dirs.staging %>/css/theme.min.css':'<%= dirs.source %>/styles/scss/theme.scss'
 		    	}]
 			}
 		},
 		uglify: {
 			dist: {
 				files: [{
-					'app/js/vendor/bootstrap.min.js':'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
+					'<%= dirs.staging %>/js/vendor/bootstrap.min.js':'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
 				}]
 			}
 			
@@ -22,9 +26,9 @@ module.exports = function(grunt) {
 		copy: {
 			main: {
 			    expand: true,
-			    cwd: 'src/',
+			    cwd: '<%= dirs.source %>/',
 			    src: ['*.html','*.png','*.ico','*.xml','js/**','img/**','fonts/**'],
-			    dest: 'app/'
+			    dest: '<%= dirs.staging %>/'
 			  }
 		},
 		watch: {
@@ -33,11 +37,15 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			html: {
-				files: 'src/*.html',
+				files: '<%= dirs.source %>/*.html',
 				tasks: ['copy']
 			},
 			img: {
-				files:'src/img/**',
+				files:'<%= dirs.source %>/img/**',
+				tasks: ['copy']
+			},
+			fonts: {
+				files:'<%= dirs.source %>/fonts/**',
 				tasks: ['copy']
 			}
 		}

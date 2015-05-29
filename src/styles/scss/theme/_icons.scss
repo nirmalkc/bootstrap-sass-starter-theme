@@ -1,0 +1,38 @@
+// --------------------------
+// Icons
+// --------------------------
+
+// Icon font face definition
+@include font-face("theme-icons", $icon-font-url, $file-formats: ttf eot svg woff);
+
+[data-icon]:before {
+  font-family: $font-family-icon;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+.icon:before,
+[class*="icon"]:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: $font-family-icon;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+
+
+[class*="icon"]:hover, *:hover [class*="icon"] {
+  text-decoration: none;
+}
