@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nirmalkc/bootstrap-sass-starter-theme"
+    "url": "https://github.com/nirmalkc/bootstrap-sass-starter-theme"
   },
   "author": "Nirmal Kumar <nirmalkc@gmail.com>",
   "license": "MIT",
