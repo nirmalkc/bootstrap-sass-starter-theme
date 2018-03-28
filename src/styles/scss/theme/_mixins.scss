@@ -193,3 +193,63 @@
 @mixin shadow-black-small {
   @include box-shadow(0, 3px, 4px, rgba(0,0,0,.6));
 }
+
+// Transitions
+@mixin simple-transition {
+  @include transition(all .2s ease-in-out);
+}
+
+// Responsive breakpoint mixin
+// ------------------------------
+// Usage:
+// 
+// @include breakpoint(lg) {
+//    <object-property: value>
+// }
+$breakpoint-xl: $screen-xl-min;
+$breakpoint-xxl: $screen-xxl-min;
+$breakpoint-lg: $screen-lg-min;
+$breakpoint-md: $screen-md-min;
+$breakpoint-sm: $screen-sm-min;
+$breakpoint-xsmax: $screen-xs-smax;
+$breakpoint-xs: $screen-xs-max;
+
+
+@mixin breakpoint($width) {
+    @if $width == xxl {
+        @media only screen and (min-width:$breakpoint-xxl) {
+            @content;
+        }
+    }
+    @else if $width == xl {
+        @media only screen and (max-width:$breakpoint-xl) {
+            @content;
+        }
+    }
+    @else if $width == lg {
+        @media only screen and (max-width:$breakpoint-lg) {
+            @content;
+        }
+    }
+    @else if $width == md {
+        @media only screen and (max-width:$breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $width == sm {
+        @media only screen and (max-width:$breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $width == xsmax {
+        @media only screen and (max-width:$breakpoint-xsmax) {
+            @content;
+        }
+    }
+
+    @else if $width == xs {
+        @media only screen and (max-width:$breakpoint-xs) {
+            @content;
+        }
+    }
+}

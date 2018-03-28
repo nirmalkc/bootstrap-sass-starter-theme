@@ -9,45 +9,9 @@ body {
 	color: $theme-body-fg;
 }
 
-// Headings
-h1,h2,h3,h4,h5,h6 { 
-	font-weight: $theme-font-weight-normal; 
-	font-size: $theme-font-size-large; 
-	clear: both;
-	color: $theme-color-black;
-}
-.heading-1 { font-size: $theme-font-size-base * 2; }
-.heading-2 { 
-	font-family: $font-family-secondary;
-	font-size: $theme-font-size-base * 1.8;
-	margin-bottom: $theme-font-size-base * 1.6;
-}
-.heading-3 { 
-	font-family: $font-family-base;
-	font-size: $theme-font-size-base * 1.2; 
-	font-weight: $theme-font-weight-bold;
-	color: $theme-color-white;
-}
-.heading-4 { font-size: $theme-font-size-base * 1.4; }
-.heading-5 { font-size: $theme-font-size-base * 1.2; }
-.heading-6 { font-size: $theme-font-size-base; }
-
-
-// Paragraph
-p {	
-	margin-bottom: $spacing-large-vertical;
-	font-weight: $theme-font-weight-normal;
-	font-size: $theme-font-size-base;
-}
-
-// Small
-small {
-	font-size: $theme-font-size-small;
-}
-
 // Horizontal Rule
 hr {
-	margin:$spacing-large-vertical 0; 
+	margin: $spacer-lg 0; 
 	$border-color: lighten($theme-color-black, 10%);
 	border-color: $border-color;
 	position: relative; 

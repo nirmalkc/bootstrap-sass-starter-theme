@@ -58,21 +58,47 @@ $theme-body-bg: 			$theme-color-white;
 $theme-body-fg: 			$theme-color-black;
 
 
-// Helpers
-$spacing-base-vertical:     12px !default;
-$spacing-base-horizontal:   24px !default;
+// Spacers
+$spacer-none:  0;
+$spacer-xs:    4px;
+$spacer-sm:    8px;
+$spacer-base:  16px;
+$spacer-md:    24px;
+$spacer-lg:    32px;
+$spacer-xl:    48px;
+$spacer-xxl:   64px;
 
-$spacing-large-vertical:    24px !default;
-$spacing-large-horizontal:  32px !default;
+$spacer-size-list: (
+    xs:     $spacer-xs,
+    sm:     $spacer-sm,
+    base:   $spacer-base,
+    md:     $spacer-md,
+    lg:     $spacer-lg,
+    xl:     $spacer-xl,
+    xxl:    $spacer-xxl,
+    none:   0
+);
 
-$spacing-small-vertical:    6px !default;
-$spacing-small-horizontal:  12px !default;
-
-$spacing-xs-vertical:       3px !default;
-$spacing-xs-horizontal:     6px !default;
-
-
+$spacer-sides: top right bottom left;
+$box-boundary-list: (
+    in: padding,
+    out: margin
+);
 
 // Graphics media
 $theme-image-path:'../img/';
 $theme-main-logo-image: $theme-image-path + 'logo-theme.png';
+
+
+// Responsive Breakpoints
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-md-max: 1024px !default;
+$screen-lg-min: 1172px !default;
+$screen-lg-max: 1200px !default;
+$screen-xl-min: 1400px !default;
+$screen-xxl-min: 1600px !default;
+$screen-xs-smax: 740px !default;
+$screen-xs-max: 568px !default;
+$screen-xs-min: 468px !default;
+$screen-base:   320px !default;
